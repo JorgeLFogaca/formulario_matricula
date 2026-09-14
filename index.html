@@ -67,7 +67,7 @@
 
             <div class="input-wrapper flex-2">
               <label for="cep">CEP</label>
-              <input id="cep" type="text" name="cep" placeholder="99999-999">
+              <input id="cep" type="number" name="cep" placeholder="99999-999">
             </div>
 
             <div class="flex">
@@ -95,6 +95,33 @@
               <input id="State" type="text" name="estado" value="SP" disabled>
             </div>
             </div>
+
+          </fieldset>
+
+          <fieldset class="guardian">
+            <legend>Informações do Responsável</legend>
+            
+            
+            <div class="input-wrapper">
+              <label for="guardian">Nome do responsável</label>
+              <input id="guardian" type="text" name="guardian">
+              <small> Principal responsável legal e contato de emergência</small>
+            </div>
+
+            <div class="input-wrapper">
+              <label for="phone">Telefone</label>
+              <input id="phone" type="number" name="phone" placeholder="(55) 12345-6789">
+            </div>
+
+            <div class="input-wrapper">
+              <label for="email">E-mail</label>
+              <input id="email" type="email" name="email" required>
+              <div class="error">
+                <img src="assets/icons/alert-circle.svg" alt="icone de erro">
+                <span>Insira E-mail válido</span>
+              </div>
+            </div>
+
 
           </fieldset>
         </form>
